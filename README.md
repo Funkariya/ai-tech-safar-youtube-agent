@@ -37,7 +37,12 @@ python scripts/retention.py retention.csv --baseline 100
 ```
 
 ## Android workflow
-Open this repository in GitHub Codespaces from a mobile browser. Use the terminal commands above. Draft outputs should be saved for review; do not connect publishing credentials.
+See [CODESPACES.md](CODESPACES.md) for exact mobile setup. In Codespaces run:
+```bash
+python -m pip install -r requirements.txt
+streamlit run app.py --server.address 0.0.0.0
+```
+The dashboard is a review desk only; it does not publish. Use `python workflow.py "Your topic"` to create a draft folder.
 
 ## Approval checklist
 1. Verify every factual claim against a primary source.

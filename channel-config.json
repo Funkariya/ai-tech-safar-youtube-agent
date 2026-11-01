@@ -1,0 +1,46 @@
+{
+  "channel": {
+    "name": "AI Tech Safar",
+    "website": "https://www.aitechsafar.com/",
+    "youtube": "https://youtube.com/@ai_tech_safar",
+    "language": "en",
+    "audience": ["US", "UK", "Canada", "Australia", "Europe"],
+    "timezone": "Asia/Kolkata"
+  },
+  "content": {
+    "topics": ["AI tools", "AI product launches", "AI model updates", "practical AI workflows", "emerging technology"],
+    "shorts": {
+      "enabled": true,
+      "frequency": "daily",
+      "target_duration_seconds": {"min": 30, "max": 60},
+      "publish_time_local": "12:30"
+    },
+    "long_form": {
+      "enabled": true,
+      "frequency_per_week": 2,
+      "target_duration_minutes": {"min": 8, "max": 12},
+      "publish_days": ["Tuesday", "Friday"],
+      "publish_time_local": "18:30"
+    }
+  },
+  "automation": {
+    "topic_research": true,
+    "fact_check_required": true,
+    "script_generation": true,
+    "voiceover_generation": true,
+    "visual_generation": true,
+    "subtitles": true,
+    "rendering": true,
+    "thumbnail_and_metadata": true,
+    "automated_quality_checks": true,
+    "youtube_scheduled_publishing_target": true,
+    "analytics_feedback": true,
+    "fail_closed_on_qa_or_auth_error": true,
+    "emergency_pause_switch_required": true
+  },
+  "publishing": {
+    "mode": "scheduled_public",
+    "initial_test_visibility": "unlisted",
+    "require_api_status_verification": true
+  }
+}
